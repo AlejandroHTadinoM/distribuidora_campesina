@@ -71,7 +71,7 @@ form {line-height:1.4em;}
 nav {
   display:block;
   width:100%;
-  background:#005fbe;
+  background:#E55353;
 }
 .line::after, nav::after, .center::after, .box::after, .margin::after {clear: both;}
 .line::before, .line::after, nav::before, nav::after, .center::before, .center::after, .box::before, .box::after, .margin::before, .margin::after {
@@ -98,7 +98,10 @@ nav {
   min-width:100%;
   padding:0.625em;
 }
-.top-nav li a:hover, .aside-nav li a:hover {background:#000;}
+.top-nav li a:hover, .aside-nav li a:hover {
+  background:#FAFAFA;
+  color: #E55353;
+}
 .top-nav li ul {display:none;}
 .top-nav li ul li {
   float:none;
@@ -134,7 +137,10 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
   font-size:0.7em;
   margin:0 0.625em;
 }
-.top-nav .active-item a {background:none repeat scroll 0 0 #000;}
+.top-nav .active-item a {
+  background:none repeat scroll 0 0 #FAFAFA;
+  color: #1E8EE8;
+}
 .aside-nav > ul > li.active-item > a:link, .aside-nav > ul > li.active-item > a:visited {
   background:none repeat scroll 0 0 #999;
   color:#fff;
@@ -486,4 +492,33 @@ nav {
   float:none;
   margin:0 auto;
   display:block;
+}
+
+.logo {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #212121;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  padding-bottom: 1rem;
+  background-color: #ccc;
+}
+.card p {
+  padding: 1rem;
+}
+.card figure {
+  position: relative;
+}
+.card figcaption {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: #FAFAFA
 }
